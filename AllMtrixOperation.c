@@ -1,0 +1,85 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int A[3][3];   // Matrix 1
+    int B[3][3];   // Matrix 2
+    int C[3][3];   // Resultant matrix
+
+    int row, col, i, sum;
+
+
+    /* Input elements in first matrix from user */
+    printf("Enter elements in matrix A \n");
+    for(row=0; row<3; row++)
+    {
+        for(col=0; col<3; col++)
+        {
+            scanf("%d", &A[row][col]);
+        }
+    }
+
+    /* Input elements in second matrix from user */
+    printf("\nEnter elements in matrix B of size \n");
+    for(row=0; row<3; row++)
+    {
+        for(col=0; col<3; col++)
+        {
+            scanf("%d", &B[row][col]);
+        }
+    }
+
+    printf("First matrix is:  \n");
+    for(row=0; row<3; row++)
+    {
+        printf("\n");
+        for(col=0; col<3; col++)
+        {
+            printf("%d\t", A[row][col]);
+        }
+    }
+
+
+
+      printf("\n Second matrix is:  \n");
+    for(row=0; row<3; row++)
+    {
+        printf("\n");
+        for(col=0; col<3; col++)
+        {
+            printf("%d\t", B[row][col]);
+        }
+    }
+/*Addition */
+
+  for(row=0; row<3; row++)
+    {
+        for(col=0; col<3; col++)
+        {
+
+
+            C[row][col] = A[row][col]+B[row][col];
+        }
+    }
+
+    /* Print product of the matrices */
+    printf("\nProduct of matrix A * B = \n");
+    for(row=0; row<3; row++)
+    {
+        printf("\n");
+        for(col=0; col<3; col++)
+        {
+            printf("%d\t ", C[row][col]);
+        }
+
+
+    }
+
+    return 0;
+}
+
+
+
+
+
